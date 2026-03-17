@@ -4157,3 +4157,72 @@ input, select, textarea {
 		}
 
 	}
+
+
+/* ===================== */
+/* Flagship Project Cards */
+/* ===================== */
+
+.flagship-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 0.5em;
+    padding: 2.5em;
+    margin-bottom: 3em;
+}
+.flagship-block { margin-bottom: 0; }
+.flagship-header {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.75em;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+.flagship-label {
+    display: inline-block;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.6);
+    font-size: 0.65em;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    padding: 0.3em 0.8em;
+    border-radius: 2em;
+    white-space: nowrap;
+}
+.flagship-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: rgba(255,255,255,0.9);
+    margin: 0;
+    text-transform: none !important;
+    border: none !important;
+}
+.flagship-description {
+    font-size: 0.9em;
+    color: rgba(255,255,255,0.5);
+    margin: 0 0 2em 0;
+    line-height: 1.6;
+}
+.pipeline-flow {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    flex-wrap: wrap;
+    margin-bottom: 2em;
+    font-size: 0.8em;
+}
+.pipeline-step {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.7);
+    padding: 0.3em 0.8em;
+    border-radius: 0.3em;
+    font-size: 0.95em;
+    white-space: nowrap;
+}
+.pipeline-arrow {
+    color: rgba(255,255,255,0.25);
+}
