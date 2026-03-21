@@ -1,31 +1,68 @@
-Solid State by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Gabriela Yordanova — Portfolio Website
+https://gabrielay0rdanova.github.io/
 
 
-After a somewhat extended break from HTML5 UP (to work on a secret-ish new project --
-more on that later!) I'm back with a brand new design: Solid State, a slick new multi-
-pager that combines some of the ideas I've played with over at Pixelarity with an "angular"
-sort of look. Hope you dig it :)
+Overview
+--------
+Personal portfolio website for Gabriela Yordanova, a Pharmacist and Real Estate
+professional turned Data Analyst. The site showcases her skills, tools, and
+end-to-end data projects.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
-
-(* = not included)
-
-AJ
-aj@lkn.io | @ajlkn
+Built with HTML, CSS, and vanilla JavaScript. Hosted on GitHub Pages.
 
 
-Credits:
+Sections
+--------
+- About       — Background, career transition story, and key stats
+- Skills      — SQL, Python, Power BI & Tableau, Excel, Data Modeling, Dev Tools
+- Projects    — Full end-to-end data platforms with per-stage breakdowns
+- Contact     — Email, LinkedIn, GitHub, Tableau Public
 
-	Demo Images:
-		Unsplash (unsplash.com)
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Projects Featured
+-----------------
+PharmaMarket Data Platform (Flagship)
+  Stage 1 — ETL          : SQL Server, T-SQL, BULK INSERT, CTEs, Window Functions
+  Stage 2 — Cleaning     : SQL Server, T-SQL, Python, Pandas, pyodbc
+  Stage 3 — EDA          : PostgreSQL, CTEs, Window Functions, Python
+  Stage 4 — Visualization: Tableau Desktop, PostgreSQL, Tableau Public
 
-	Other:
-		jQuery (jquery.com)
-		Scrollex (github.com/ajlkn/jquery.scrollex)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Real Estate Data Platform (In Development)
+  Stage 1 — Scraper      : Python, BeautifulSoup, Selenium, Pandas
+  Stage 2 — Cleaning     : Python, Pandas, NumPy, Regex
+  Stage 3 — Analysis     : Python, Pandas, Matplotlib, Seaborn
+  Stage 4 — Dashboard    : Power BI, DAX, Power Query
+
+
+Technologies Used
+-----------------
+- HTML5, CSS3, JavaScript
+- Google Analytics 4 (visitor and click tracking)
+- Font Awesome 6.5.1 (icons)
+- Google Fonts — Waterfall, DM Sans, DM Mono
+- jQuery, Scrollex, Responsive Tools
+
+
+Analytics
+---------
+The site uses Google Analytics 4 to track:
+- Page visits
+- GitHub link clicks
+- Tableau link clicks
+- LinkedIn link clicks
+- CV/Resume downloads
+
+
+Credits
+-------
+Design inspired by Solid State by HTML5 UP (https://html5up.net/solid-state)
+Licensed under the Creative Commons Attribution 3.0 License (https://html5up.net/license)
+All content, customisation, and project work by Gabriela Yordanova.
+
+
+Contact
+-------
+Email     : gabriela.gencheva6@gmail.com
+LinkedIn  : https://www.linkedin.com/in/gabriela-yordanova-837ba2124/
+GitHub    : https://github.com/GabrielaY0rdanova
+Tableau   : https://public.tableau.com/app/profile/gabriela.yordanova

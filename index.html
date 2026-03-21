@@ -335,6 +335,7 @@
 			</div>
 			<div class="footer-bottom">
 				<p>&copy; 2025 Gabriela Yordanova. All rights reserved.</p>
+				<p style="font-size:0.7rem; color: var(--text-subtle); margin-top: 0.3rem;">Design inspired by <a href="https://html5up.net/solid-state" target="_blank" style="color: var(--text-subtle);">Solid State</a> by HTML5 UP (<a href="https://html5up.net/license" target="_blank" style="color: var(--text-subtle);">CCA 3.0</a>).</p>
 			</div>
 		</div>
 	</footer>
@@ -373,29 +374,38 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	});
 });
 
-// GA4 click tracking — wrapped in load event to ensure gtag is ready
+// GA4 click tracking — uses beacon transport so events fire even on target="_blank" links
 window.addEventListener('load', function() {
-	function safeGtag(eventName, params) {
-		if (typeof gtag === 'function') {
-			gtag('event', eventName, params);
-		}
+	function trackClick(eventName, label) {
+		if (typeof gtag !== 'function') return;
+		gtag('event', eventName, {
+			event_category: 'outbound',
+			event_label: label,
+			transport_type: 'beacon'
+		});
 	}
 
 	document.querySelectorAll('a[href*="github.com"]').forEach(function(a) {
 		a.addEventListener('click', function() {
-			safeGtag('click_github', { event_category: 'outbound', event_label: a.href });
+			trackClick('click_github', a.href);
 		});
 	});
 
 	document.querySelectorAll('a[href*="tableau"]').forEach(function(a) {
 		a.addEventListener('click', function() {
-			safeGtag('click_tableau', { event_category: 'outbound', event_label: a.href });
+			trackClick('click_tableau', a.href);
+		});
+	});
+
+	document.querySelectorAll('a[href*="linkedin"]').forEach(function(a) {
+		a.addEventListener('click', function() {
+			trackClick('click_linkedin', a.href);
 		});
 	});
 
 	document.querySelectorAll('a[href="CV.pdf"]').forEach(function(a) {
 		a.addEventListener('click', function() {
-			safeGtag('download_cv', { event_category: 'engagement' });
+			trackClick('download_cv', 'CV.pdf');
 		});
 	});
 });
