@@ -374,7 +374,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	});
 });
 
-// GA4 click tracking — uses beacon transport so events fire even on target="_blank" links
 window.addEventListener('load', function() {
 	function trackClick(eventName, label) {
 		if (typeof gtag !== 'function') return;
@@ -384,29 +383,17 @@ window.addEventListener('load', function() {
 			transport_type: 'beacon'
 		});
 	}
-
 	document.querySelectorAll('a[href*="github.com"]').forEach(function(a) {
-		a.addEventListener('click', function() {
-			trackClick('click_github', a.href);
-		});
+		a.addEventListener('click', function() { trackClick('click_github', a.href); });
 	});
-
 	document.querySelectorAll('a[href*="tableau"]').forEach(function(a) {
-		a.addEventListener('click', function() {
-			trackClick('click_tableau', a.href);
-		});
+		a.addEventListener('click', function() { trackClick('click_tableau', a.href); });
 	});
-
 	document.querySelectorAll('a[href*="linkedin"]').forEach(function(a) {
-		a.addEventListener('click', function() {
-			trackClick('click_linkedin', a.href);
-		});
+		a.addEventListener('click', function() { trackClick('click_linkedin', a.href); });
 	});
-
 	document.querySelectorAll('a[href="CV.pdf"]').forEach(function(a) {
-		a.addEventListener('click', function() {
-			trackClick('download_cv', 'CV.pdf');
-		});
+		a.addEventListener('click', function() { trackClick('download_cv', 'CV.pdf'); });
 	});
 });
 </script>
