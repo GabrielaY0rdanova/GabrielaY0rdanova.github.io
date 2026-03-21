@@ -5,6 +5,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Pharmacist & Real Estate professional turned Data Analyst. Specializing in SQL, Python, Power BI, and Tableau." />
+	<!-- Google Analytics 4 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ1DQR960W"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-BQ1DQR960W');
+	</script>
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Waterfall&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -362,6 +370,23 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	a.addEventListener('click', e => {
 		const target = document.querySelector(a.getAttribute('href'));
 		if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+	});
+});
+
+// GA4 click tracking
+document.querySelectorAll('a[href*="github.com"]').forEach(a => {
+	a.addEventListener('click', () => {
+		gtag('event', 'click_github', { event_category: 'outbound', event_label: a.href });
+	});
+});
+document.querySelectorAll('a[href*="tableau"]').forEach(a => {
+	a.addEventListener('click', () => {
+		gtag('event', 'click_tableau', { event_category: 'outbound', event_label: a.href });
+	});
+});
+document.querySelectorAll('a[href="CV.pdf"]').forEach(a => {
+	a.addEventListener('click', () => {
+		gtag('event', 'download_cv', { event_category: 'engagement' });
 	});
 });
 </script>
