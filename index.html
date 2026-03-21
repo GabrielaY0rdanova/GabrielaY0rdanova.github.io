@@ -11,7 +11,14 @@
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
 		gtag('js', new Date());
-		gtag('config', 'G-BQ1DQR960W');
+		gtag('consent', 'default', {
+			analytics_storage: 'granted',
+			ad_storage: 'denied'
+		});
+		gtag('config', 'G-BQ1DQR960W', {
+			cookie_flags: 'SameSite=None;Secure',
+			send_page_view: true
+		});
 	</script>
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Waterfall&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" />
