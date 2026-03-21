@@ -373,20 +373,30 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	});
 });
 
-// GA4 click tracking
-document.querySelectorAll('a[href*="github.com"]').forEach(a => {
-	a.addEventListener('click', () => {
-		gtag('event', 'click_github', { event_category: 'outbound', event_label: a.href });
+// GA4 click tracking — wrapped in load event to ensure gtag is ready
+window.addEventListener('load', function() {
+	function safeGtag(eventName, params) {
+		if (typeof gtag === 'function') {
+			gtag('event', eventName, params);
+		}
+	}
+
+	document.querySelectorAll('a[href*="github.com"]').forEach(function(a) {
+		a.addEventListener('click', function() {
+			safeGtag('click_github', { event_category: 'outbound', event_label: a.href });
+		});
 	});
-});
-document.querySelectorAll('a[href*="tableau"]').forEach(a => {
-	a.addEventListener('click', () => {
-		gtag('event', 'click_tableau', { event_category: 'outbound', event_label: a.href });
+
+	document.querySelectorAll('a[href*="tableau"]').forEach(function(a) {
+		a.addEventListener('click', function() {
+			safeGtag('click_tableau', { event_category: 'outbound', event_label: a.href });
+		});
 	});
-});
-document.querySelectorAll('a[href="CV.pdf"]').forEach(a => {
-	a.addEventListener('click', () => {
-		gtag('event', 'download_cv', { event_category: 'engagement' });
+
+	document.querySelectorAll('a[href="CV.pdf"]').forEach(function(a) {
+		a.addEventListener('click', function() {
+			safeGtag('download_cv', { event_category: 'engagement' });
+		});
 	});
 });
 </script>
