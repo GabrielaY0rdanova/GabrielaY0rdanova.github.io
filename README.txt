@@ -37,20 +37,9 @@ Real Estate Data Platform (In Development)
 Technologies Used
 -----------------
 - HTML5, CSS3, JavaScript
-- Google Analytics 4 (visitor and click tracking)
 - Font Awesome 6.5.1 (icons)
 - Google Fonts — Waterfall, DM Sans, DM Mono
 - jQuery, Scrollex, Responsive Tools
-
-
-Analytics
----------
-The site uses Google Analytics 4 to track:
-- Page visits
-- GitHub link clicks
-- Tableau link clicks
-- LinkedIn link clicks
-- CV/Resume downloads
 
 
 Credits

@@ -5,9 +5,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<meta name="description" content="Pharmacist & Real Estate professional turned Data Analyst. Specializing in SQL, Python, Power BI, and Tableau." />
-	<!-- Cloudflare Web Analytics -->
-	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a9c870e1b4254c8da33cd15ae3886a1a"}'></script>
-	<!-- End Cloudflare Web Analytics -->
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Waterfall&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -366,29 +363,6 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 	a.addEventListener('click', e => {
 		const target = document.querySelector(a.getAttribute('href'));
 		if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
-	});
-});
-
-window.addEventListener('load', function() {
-	function trackClick(eventName, label) {
-		if (typeof gtag !== 'function') return;
-		gtag('event', eventName, {
-			event_category: 'outbound',
-			event_label: label,
-			transport_type: 'beacon'
-		});
-	}
-	document.querySelectorAll('a[href*="github.com"]').forEach(function(a) {
-		a.addEventListener('click', function() { trackClick('click_github', a.href); });
-	});
-	document.querySelectorAll('a[href*="tableau"]').forEach(function(a) {
-		a.addEventListener('click', function() { trackClick('click_tableau', a.href); });
-	});
-	document.querySelectorAll('a[href*="linkedin"]').forEach(function(a) {
-		a.addEventListener('click', function() { trackClick('click_linkedin', a.href); });
-	});
-	document.querySelectorAll('a[href="CV.pdf"]').forEach(function(a) {
-		a.addEventListener('click', function() { trackClick('download_cv', 'CV.pdf'); });
 	});
 });
 </script>
