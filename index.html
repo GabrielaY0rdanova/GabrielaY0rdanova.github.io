@@ -356,8 +356,16 @@ const observer = new IntersectionObserver((entries) => {
 			observer.unobserve(el.target);
 		}
 	});
-}, { threshold: 0.1 });
-revealEls.forEach(el => observer.observe(el));
+}, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+revealEls.forEach(el => {
+	const rect = el.getBoundingClientRect();
+	if (rect.top < window.innerHeight && rect.bottom > 0) {
+		const delay = el.dataset.delay || 0;
+		setTimeout(() => el.classList.add('visible'), parseInt(delay));
+	} else {
+		observer.observe(el);
+	}
+});
 
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
