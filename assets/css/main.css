@@ -275,10 +275,10 @@ h4 { font-size: 0.95rem; font-weight: 500; }
 .project-links-row { display: flex; gap: 1.25rem; align-items: center; }
 .project-link-accent { color: var(--gold); }
 .project-link-accent:hover { color: #fff; }
-.in-dev { opacity: 0.65; }
+.in-dev { opacity: 1; }
 .placeholder-img { aspect-ratio: 16/9; background: rgba(255,255,255,0.03); display: flex; align-items: center; justify-content: center; font-size: 2rem; color: rgba(255,255,255,0.1); }
 .coming-label { font-family: var(--font-mono); font-size: 0.58em; font-weight: 400; color: var(--text-muted); letter-spacing: 0.1em; margin-left: 0.5em; vertical-align: middle; }
-.coming-soon { pointer-events: none; }
+.coming-soon { pointer-events: none; opacity: 0.65; }
 
 /* Projects → Footer fade */
 #projects {
