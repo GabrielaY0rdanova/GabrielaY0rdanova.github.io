@@ -258,7 +258,7 @@ h4 { font-size: 0.95rem; font-weight: 500; }
 .project-card-image { position: relative; aspect-ratio: 16/9; overflow: hidden; }
 .project-card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .project-card:hover .project-card-image img { transform: scale(1.04); }
-.project-card-overlay { position: absolute; inset: 0; background: rgba(25,28,45,0.88); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity var(--transition); }
+.project-card-overlay { position: absolute; inset: 0; background: rgba(25,28,45,0.88); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.6rem; opacity: 0; transition: opacity var(--transition); }
 .project-card:hover .project-card-overlay { opacity: 1; }
 .overlay-link { font-size: 0.78rem; font-weight: 500; color: #fff !important; background: var(--accent); padding: 0.55em 1.3em; border-radius: var(--radius); display: flex; align-items: center; gap: 0.4em; transition: background var(--transition); }
 .overlay-link:hover { background: #bac5f7; }
