@@ -78,8 +78,6 @@
 						<div class="stat">
 							<span class="stat-number">2</span>
 							<span class="stat-label">End-to-end platforms</span>
-							<span class="stat-sub">· 1 live</span>
-							<span class="stat-sub">· 1 in development</span>
 						</div>
 					</div>
 				</div>
@@ -228,10 +226,9 @@
 				</div>
 			</div>
 
-
-			<div class="project-platform in-dev">
+			<div class="project-platform">
 				<div class="platform-meta">
-					<span class="platform-badge badge-dev">In Development</span>
+					<span class="platform-badge">Complete</span>
 					<h3 class="platform-title">Real Estate Data Platform</h3>
 					<p class="platform-desc">A four-stage end-to-end project built on real Bulgarian real estate market data — from web scraping to an interactive Power BI dashboard, with Python driving the first three stages.</p>
 					<div class="pipeline">
@@ -244,6 +241,7 @@
 						<div class="pipeline-node"><i class="fa-solid fa-chart-bar"></i><span>Dashboard</span></div>
 					</div>
 				</div>
+
 				<div class="project-cards">
 					<article class="project-card live">
 						<div class="project-card-image">
@@ -255,7 +253,7 @@
 						</div>
 						<div class="project-card-body">
 							<div class="project-stage">Stage 1</div>
-							<h4>Bulgaria Real Estate Scraper <span class="coming-label" style="color: #6fcf97;">● Live</span></h4>
+							<h4>Bulgaria Real Estate Scraper</h4>
 							<p>Modular Python web scraper collecting 199,496 real estate listings across 54 Bulgarian regions from imot.bg — covering prices, locations, property types, construction details, and features. Includes a three-level cascade strategy to overcome per-URL listing caps, full resume support via checkpointing, and a real-time Telegram monitoring bot.</p>
 							<div class="project-tools"><span>Python</span><span>requests</span><span>BeautifulSoup4</span><span>logging</span><span>openpyxl</span></div>
 							<div class="project-links-row">
@@ -274,7 +272,7 @@
 						</div>
 						<div class="project-card-body">
 							<div class="project-stage">Stage 2</div>
-							<h4>Bulgaria Real Estate Cleaning <span class="coming-label" style="color: #6fcf97;">● Live</span></h4>
+							<h4>Bulgaria Real Estate Cleaning</h4>
 							<p>Modular 8-stage Python pipeline transforming 199,496 raw imot.bg listings into analysis-ready datasets — covering field parsing, Bulgarian-to-English translation, deduplication, outlier flagging, normalisation, and validation, with a full Markdown audit report for data quality transparency.</p>
 							<div class="project-tools"><span>Python</span><span>Pandas</span><span>Regex</span><span>Kaggle</span></div>
 							<div class="project-links-row">
@@ -288,25 +286,47 @@
 							<img src="images\RE_EDA.png" alt="Bulgaria Real Estate Analysis" />
 							<div class="project-card-overlay">
 								<a href="https://github.com/GabrielaY0rdanova/bulgaria-real-estate-analysis" target="_blank" rel="noopener" class="overlay-link"><i class="fa-brands fa-github"></i> View on GitHub</a>
+								<a href="https://www.kaggle.com/datasets/gabrielagencheva/bulgaria-real-estate-listings" target="_blank" rel="noopener" class="overlay-link"><i class="fa-brands fa-kaggle"></i> View on Kaggle</a>
 							</div>
 						</div>
 						<div class="project-card-body">
 							<div class="project-stage">Stage 3</div>
-							<h4>Bulgaria Real Estate Analysis <span class="coming-label" style="color: #6fcf97;">● Live</span></h4>
+							<h4>Bulgaria Real Estate Analysis</h4>
 							<p>Five-script Python EDA pipeline exploring 192,004 Bulgarian property listings — covering market composition, price distributions by type and region, geographic price premiums, and the measurable sale and rental uplift of individual amenities, with all findings saved as publication-ready chart outputs.</p>
 							<div class="project-tools"><span>Python</span><span>Pandas</span><span>Matplotlib</span><span>Seaborn</span></div>
 							<div class="project-links-row">
 								<a href="https://github.com/GabrielaY0rdanova/bulgaria-real-estate-analysis" class="project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+								<a href="https://www.kaggle.com/datasets/gabrielagencheva/bulgaria-real-estate-listings" 
+								class="project-link project-link-accent" target="_blank">
+								<i class="fa-brands fa-kaggle"></i> Kaggle Dataset</a>
 							</div>
 						</div>
 					</article>
-					<article class="project-card coming-soon">
-						<div class="project-card-image placeholder-img"><i class="fa-solid fa-chart-bar"></i></div>
+					<article class="project-card live">
+						<div class="project-card-image">
+							<img src="images/RE_Visualization.png" alt="Bulgaria Real Estate Visualization" />
+							<div class="project-card-overlay">
+								<a href="https://github.com/GabrielaY0rdanova/bulgaria-real-estate-visualization" 
+								target="_blank" rel="noopener" class="overlay-link">
+								<i class="fa-brands fa-github"></i> View on GitHub
+								</a>
+								<a href="https://www.kaggle.com/datasets/gabrielagencheva/bulgaria-real-estate-listings" target="_blank" rel="noopener" class="overlay-link"><i class="fa-brands fa-kaggle"></i> View on Kaggle</a>
+							</div>
+						</div>
 						<div class="project-card-body">
 							<div class="project-stage">Stage 4</div>
-							<h4>Bulgaria Real Estate Visualization <span class="coming-label">Coming Soon</span></h4>
-							<p>Interactive Power BI dashboard presenting key insights — price trends, location breakdowns, property type distribution and market dynamics across the Bulgarian real estate market.</p>
+							<h4>Bulgaria Real Estate Visualization</h4>
+							<p>Interactive 5-page Power BI dashboard presenting key insights from 192,004 Bulgarian property listings — market composition, price distributions, regional premiums, and the measurable price uplift of individual property features. Built on a single flat CSV export requiring no Power Query transformations.</p>
 							<div class="project-tools"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
+							<div class="project-links-row">
+								<a href="https://github.com/GabrielaY0rdanova/bulgaria-real-estate-visualization"
+								class="project-link" target="_blank">
+								<i class="fa-brands fa-github"></i> GitHub
+								</a>
+								<a href="https://www.kaggle.com/datasets/gabrielagencheva/bulgaria-real-estate-listings" 
+								class="project-link project-link-accent" target="_blank">
+								<i class="fa-brands fa-kaggle"></i> Kaggle Dataset</a>
+							</div>
 						</div>
 					</article>
 				</div>
